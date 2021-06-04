@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>my cv</title>
+<style>
+	*{
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+		text-decoration: none;
+		box-sizing: border-box;
+	}
+	body{
+		font-family: montserrat;
+		background-image: url('background.jpg');
+	}
+	nav{
+		background:red;
+		height: 60px;
+		width: 100%;
+		position: -webkit-sticky; 
+        position: sticky;
+        top: 0;
+	}
+	label.logo{
+		color: white;
+		font-size:35px;
+		line-height: 60px;
+		padding: 0 100px;
+		font-size: bold;
+	}
+	nav ul{
+		float: right;
+
+		margin-right: 50px;
+	}
+	nav ul li{
+		display: inline-block;
+		line-height: 60px;
+		margin: 0 5px;
+	}
+	nav ul li a{
+		color: gray;
+		font-size: 17px;
+		padding: 15px;
+	}
+	a:hover{
+		color: white;
+	}
+	div.myinfo img{
+
+		border-radius: 50%;
+	}
+	div.myinfo{
+		margin-left:150px;
+		margin-top: 150px;
+		margin-bottom: 180px;
+	}
+	div.myinfo h1{
+		float: right;
+		color:white;
+		font-size: 75px;
+		padding: 50px 50px 0 0;
+
+	}
+	div.myinfo p{
+		float: right;
+		color:red;
+		font-size: 40px
+	}
+	#aboutme{
+		padding-top: 200px;
+		color: red;
+		font-size: 50px;
+	}
+	div.subjects{
+		color: white;
+		font-size: 30px;
+		text-align: center;
+	}
+		#hobbies{
+		padding-top: 200px;
+		color: red;
+		font-size: 50px;
+	}
+	div.myhobbies{
+		color: white;
+		font-size: 30px;
+		text-align: center;
+	}
+		#contactme{
+		padding-top: 200px;
+		margin-bottom: 30px;
+		color: red;
+		font-size: 50px;
+	}
+		div.contact{
+		color: white;
+		font-size: 30px;
+		text-align: center;
+	}
+@media screen and(max-width: 400px){
+	label{
+		font-size: 30px;
+		padding-left: 50px;
+	}
+	nav ul{
+		margin: 0;
+		padding: 0;
+	}
+	nav ul li{
+		display: block;
+	}
+	div.myinfo img{
+		width: 100%
+	}
+}
+</style>
+</head>
+<body>
+<nav>
+	<label class="logo"><i>My cv</i></label>
+	<ul>
+		<li><a href="#home" class="active">Home</a></li>
+		<li><a href="#aboutme">About me</a></li>
+		<li><a href="#hobbies">Hobbies</a></li>
+		<li><a href="#contactme">Contact me</a></li>
+	</ul>
+</nav>
+<div class="myinfo" id="home">
+	<img src="mypic.png" alt="my picture" height="250" width="250">
+	<h1 ><i>Mohamed Yehia Kamal</i><br>
+		<p><i>I am a student at shoubra faculty of engenering</i></p></h1>
+</div>
+<div id="aboutme">
+	<h1 style="text-align: center; "><i>About me</i></h1>
+	<div class="subjects">
+		<p><i>My name is mohamed yehia kamal<br>
+    I am a student at shoubra faculty of engenering<br>
+    I got a good grade and joined Department of Communications Engineering<br>
+    I am studing 6 subjects electronics,circuits,enginerring language,math,tests and computer application<br>
+    And my favourite sybject is computer application becouse i love web design<br>
+    I was studing html and css and now studing java<br>
+    </p>
+  </div>
+
+</div>
+<div id="hobbies">
+	<h1 style="text-align: center; "><i>Hobbies</i></h1>
+	<div class="myhobbies">
+		<p>
+			My hobbies :<br>
+		Playing sports (football, tennis, etc.)<br>
+		Playing chess and solving puzzle games.<br>
+		Reading and writing books and articles.<br>
+		Drawing, sketching and painting.<br>
+		Travelling.<br>
+    </p>
+  </div>
+</div>
+<div id="contactme">
+	<h1 style="text-align: center; "><i>Contact me</i></h1>
+	<div class="contact">
+	<form>
+		<label for="name">your name:</label><br>
+		<input type="text" name="name" id="name" value="name"><br>
+		<label for="email">your email:</label><br>
+		<input type="text" name="email" id="email" value="example@ex.com"><br>
+		<label for="yourmassege">your message:</label><br>
+		<textarea cols="20" rows="10"></textarea><br>
+		<button>send</button><br>
+		
+	</form>	
+		</div>
+</div>
+
+
+
+</body>
+</html>
